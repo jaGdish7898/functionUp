@@ -68,3 +68,61 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+const Container=styled.div`
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color:orange;
+    position: relative;
+   
+
+`
+const Wrapper=styled.div`
+    height: 100%;
+`
+const Arrow=styled.div`
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    margin: auto;
+    left: ${(props)=>props.direction==="left" && "10px"};
+    right: ${(props)=>props.direction==="right" && "10px"};
+    cursor: pointer ;
+    opacity: 0;
+
+
+
+  
+
+`
+const Slide=styled.div`
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+    align-items: center;
+
+`
+const ImgContainer=styled.div`
+    flex:1;
+    height:100%
+
+
+`
+const Image=styled.image`
+    height:80%
+
+`
+const InfoContainer=styled.div`
+     flex:1;
+`
