@@ -11,10 +11,12 @@ const Container=styled.div`
     display: flex;
     
     position: relative;
-   border: 3px solid blue;
+   /* border: 3px solid blue; */
 
 `
+
 const Arrow=styled.div`
+
     width: 50px;
     height: 50px;
     background-color: white;
@@ -23,59 +25,92 @@ const Arrow=styled.div`
     align-items: center;  
     justify-content: center;
     position: absolute;
+  
     top: 0;
     bottom:0;
-    left: ${(props)=>props.direction==="left" && "10px"};
+  background:red;
+    right: ${(props)=>props.direction==="left" && "70px"};
     right: ${(props)=>props.direction==="right" && "10px"};
     margin: auto;
-    cursor: pointer ;
+    cursor: pointer;
+   
+    
+
+    
+   
+  
  
 `
 const Wrapper=styled.div`
     height: 100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 `
 const Slide=styled.div`
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 
 `
 const ImgContainer=styled.div`
-    border: 2px solid green;
+    
     height:100%;
     flex:1;
+    margin-top: 20px;
+    position: relative;
+    
     
 
 
 `
 const InfoContainer=styled.div`
-     flex:1;
-     padding:50px;
-    border: 2px solid violet;
+    flex:1;
+    padding:50px;
+    
+    /* border: 2px solid violet; */
 
 `
-const Title=styled.h1``
-const Desc=styled.p``
-const Button=styled.button``
+const Title=styled.h1`
+    font-weight: bolder;
+    font-size: 70px;
+    `
+
+const Desc=styled.p`
+    margin: 50px 0px;
+    font-size: 20px;
+    font-weight:500;
+    letter-spacing: 3px;
+`
+const Button=styled.button`
+    padding:10px;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+`
+
+
 const Image=styled.img`
     height:80%;
+    width: 100%;
+    /* padding-top: 30px; */
+    position: absolute;
+    top:0px;
+    bottom:0px;
+    margin: auto;
 `
 
 
 const Slider1 = () => {
   return <Container>
              <Arrow direction='left'>
-                <ArrowLeftIcon/>
+                <ArrowLeftIcon style={{fontSize:80}}/>
             </Arrow>
-
             <Wrapper>
 
            <Slide>
            <ImgContainer>
-                <Image src="./images/img2.jpg"/>
+                <Image src="./images/img3.jpg"/>
             </ImgContainer>
             <InfoContainer>
                 <Title>Supreme Sale</Title>
@@ -87,7 +122,7 @@ const Slider1 = () => {
             </Wrapper>
 
             <Arrow direction='right'>
-                <ArrowRightIcon/>
+                <ArrowRightIcon style={{fontSize:80}}/>
             </Arrow>
 
         </Container>;
