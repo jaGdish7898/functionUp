@@ -36,8 +36,8 @@ const Wrapper=styled.div`
 `
 const Slide=styled.div`
     display: flex;
-    /* height: 100vh;
-    width: 100vh; */
+    height: 100vh;
+    width: 100vh;
     align-items: center;
 
 `
@@ -50,10 +50,7 @@ const ImgContainer=styled.div`
 const InfoContainer=styled.div`
      flex:1;
 `
-const Image=styled.image`
-  
-
-`
+const Image=styled.img``
 
 const Slider1 = () => {
   return <Container>
@@ -62,13 +59,15 @@ const Slider1 = () => {
             </Arrow>
 
             <Wrapper>
-           
-            <ImgContainer>
-                <Image src="./j.jpg"/>
+           <Slide>
+           <ImgContainer>
+                <Image src=""/>
             </ImgContainer>
             
             
             <InfoContainer></InfoContainer>
+           </Slide>
+            
 
             </Wrapper>
 

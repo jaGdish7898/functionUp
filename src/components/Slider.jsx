@@ -63,7 +63,7 @@ const Slider = () => {
             <Wrapper>
             <Slide>
             <ImgContainer>
-                <Image src='https://i.iib.co/XsdmR2c/1.png'/>
+                <Image src='https://api.unsplash.com/search/photos?query=animal'/>
             </ImgContainer>
             </Slide>
             
